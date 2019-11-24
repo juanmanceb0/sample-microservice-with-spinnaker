@@ -5,6 +5,9 @@ image:
   tag: latest
   pullPolicy: Always
 
+imagePullSecrets:
+  - name: "docker-dev"
+
 service:
   type: ClusterIP
   port: 8080
